@@ -1,4 +1,4 @@
-Weather Suggestion App build using Flask, React, REST. 
+# Weather Suggestion App build using Flask, React, REST. 
 It is dockerized and deployed on AWS
 link: https://d3uo8w98n6piiz.cloudfront.net/
 
