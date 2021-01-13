@@ -32,8 +32,7 @@ def check_if_within_range(user_latitude, user_longitude, radius, park_latitude, 
     lat2 = float(park_latitude)
     lon2 = float(park_longitude)
     dist = ds.distance((lat1, lon1), (lat2, lon2)).miles
-
-    if dist <= float(radius):
+    if radius == None or dist <= float(radius):
 
         return dist, True
     else:

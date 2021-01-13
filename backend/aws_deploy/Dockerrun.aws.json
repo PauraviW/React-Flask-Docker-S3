@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "871916878147.dkr.ecr.us-east-1.amazonaws.com/reactflaskbackend",
+    "Name": "629419522878.dkr.ecr.us-east-1.amazonaws.com/app",
     "Update": "true"
   },
   "Ports": [

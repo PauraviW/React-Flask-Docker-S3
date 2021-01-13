@@ -10,26 +10,23 @@ import 'react-toastify/dist/ReactToastify.css'
 class App extends Component {
     state = {}
     render() {
-        return (
-            <React.Fragment>
-                <NavBar></NavBar>
-                <ToastContainer/>
-                <div className='d-flex justify-content-center'
-                    style={
-                        {
-                            paddingLeft: "0px !important",
-                            paddingRight: '0px !important'
-                        }
-                }>
-                    <div className=" col-lg-10">
-                        <Switch>
-                            <Route path='/weather' render ={(props)=> <Weather {...props}></Weather>}></Route>
-                            <Redirect from='/' to='/weather'></Redirect>
-                        </Switch>
-                    </div>
+        return (<React.Fragment>
+            <NavBar></NavBar>
+            <ToastContainer/>
+            <div className='d-flex justify-content-center'
+                style={
+                    {
+                        paddingLeft: "0px !important",
+                        paddingRight: '0px !important'
+                    }
+            }>
+                <div className=" col-lg-10">
+                    <Switch>
+                        <Route path='/' render ={(props)=> <Weather {...props}></Weather>}></Route>
+                    </Switch>
                 </div>
-            </React.Fragment>
-        )
+            </div>
+        </React.Fragment>)
     }
 }
 export default App

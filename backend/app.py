@@ -156,7 +156,7 @@ class Hello(Resource):
 # add the api resource
 api.add_resource(SuggestParks, '/api/v1.0/parks/latitude/<latitude>/longitude/<longitude>')
 
-api.add_resource(Hello, '/')
+api.add_resource(Hello, '/', '/hello')
 
 
 if __name__ == '__main__':
